@@ -1,0 +1,10 @@
+# Ignorar XMLs descarregados
+Famalicao/registosFamalicao_xml/
+
+# Ignorar HTMLs gerados
+Famalicao/htmlFamalicao/
+Famalicao/outputFama_html/
+
+# Ignorar ficheiros temporários
+*.log
+*.tmp
