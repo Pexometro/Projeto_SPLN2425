@@ -2,61 +2,61 @@ import os
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-INPUT_DIR = "registosFamalicao_xml"
-OUTPUT_DIR = "outputFama_html"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+# Diretórios
+INPUT_DIR = Path("registosFamalicao_xml")
+OUTPUT_DIR = Path("htmlFamalicao")
+OUTPUT_DIR.mkdir(exist_ok=True)
+
+NS = {'ns': 'urn:isbn:1-931666-22-9'}
 
 def extract_text(elem):
-    return (elem.text or '').strip() if elem is not None else ''
+    return (elem.text or '').strip() if elem is not None else ""
 
-def generate_html_page(record_id, root):
-    html = f"""
-    <html>
-    <head><meta charset='UTF-8'><title>{record_id}</title></head>
-    <body>
-        <h1>{record_id}</h1>
-        <ul>
-    """
-    
-    for elem in root.iter():
-        tag = elem.tag.split('}')[-1]  # remove namespace
-        text = extract_text(elem)
-        if text:
-            html += f"<li><strong>{tag}</strong>: {text}</li>\n"
+# Lista de páginas para o índice
+html_index = []
 
-    html += """
-        </ul>
-        <a href='index.html'>Voltar ao índice</a>
-    </body></html>
-    """
-    return html
-
-def main():
-    index_entries = []
-
-    for xml_file in sorted(Path(INPUT_DIR).glob("*.xml")):
-        record_id = xml_file.stem
+for xml_file in sorted(INPUT_DIR.glob("*.xml")):
+    try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
+        
+        archdesc = root.find(".//ns:archdesc", NS)
+        did = archdesc.find("ns:did", NS) if archdesc is not None else None
+        
+        unitid = extract_text(did.find("ns:unitid", NS)) if did is not None else "Sem ID"
+        unittitle = extract_text(did.find("ns:unittitle", NS)) if did is not None else "Sem título"
+        unitdate = extract_text(did.find("ns:unitdate", NS)) if did is not None else ""
+        level = archdesc.attrib.get("otherlevel", archdesc.attrib.get("level", "N/D")) if archdesc is not None else "N/D"
+        scope = extract_text(archdesc.find("ns:scopecontent/ns:p", NS)) if archdesc is not None else ""
+        biog = extract_text(archdesc.find("ns:bioghist/ns:p", NS)) if archdesc is not None else ""
 
-        html_content = generate_html_page(record_id, root)
-        html_path = Path(OUTPUT_DIR) / f"{record_id}.html"
-        with open(html_path, "w", encoding="utf-8") as f:
-            f.write(html_content)
+        html_content = f"""
+        <html><head><meta charset='utf-8'><title>{unitid}</title></head><body>
+        <h1>{unittitle}</h1>
+        <p><strong>Identificador:</strong> {unitid}</p>
+        <p><strong>Data:</strong> {unitdate}</p>
+        <p><strong>Nível:</strong> {level}</p>
+        <p><strong>Descrição:</strong> {scope}</p>
+        <p><strong>Biografia/Histórico:</strong> {biog}</p>
+        <a href='index.html'>⬅ Voltar ao índice</a>
+        </body></html>
+        """
 
-        index_entries.append(f"<li><a href='{record_id}.html'>{record_id}</a></li>")
+        html_filename = xml_file.stem + ".html"
+        with open(OUTPUT_DIR / html_filename, "w", encoding="utf-8") as out:
+            out.write(html_content)
 
-    # Criar index.html
-    index_html = """
-    <html><head><meta charset='UTF-8'><title>Índice de Registos</title></head><body>
-    <h1>Registos OAI-PMH</h1>
-    <ul>
-    """ + "\n".join(index_entries) + """
-    </ul></body></html>
-    """
+        html_index.append(f"<li><a href='{html_filename}'>{unittitle or unitid}</a></li>")
 
-    with open(Path(OUTPUT_DIR) / "index.html", "w", encoding="utf-8") as f:
-        f.write(index_html)
+    except Exception as e:
+        print(f"Erro no ficheiro {xml_file.name}: {e}")
 
-if __name__ == "__main__":
-    main()
+# Gerar índice
+index_html = "<html><head><meta charset='utf-8'><title>Índice Famalicão</title></head><body><h1>Registos de Famalicão</h1><ul>"
+index_html += "\n".join(html_index)
+index_html += "</ul></body></html>"
+
+with open(OUTPUT_DIR / "index.html", "w", encoding="utf-8") as f:
+    f.write(index_html)
+
+print("✅ HTML gerado com sucesso em: htmlFamalicao/")
