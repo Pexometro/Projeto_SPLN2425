@@ -1,9 +1,11 @@
 # Ignorar XMLs descarregados
 Famalicao/registosFamalicao_xml/
+VilaReal/registosVilaReal_xml/
 
 # Ignorar HTMLs gerados
 Famalicao/htmlFamalicao/
 Famalicao/outputFama_html/
+VilaReal/htmlVilaReal/
 
 # Ignorar ficheiros temporários
 *.log
