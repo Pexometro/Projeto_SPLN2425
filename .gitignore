@@ -2,6 +2,8 @@
 Famalicao/registosFamalicao_xml/
 VilaReal/registosVilaReal_xml/
 
+VilaReal/entidades_VilaReal.csv
+
 # Ignorar HTMLs gerados
 Famalicao/htmlFamalicao/
 Famalicao/outputFama_html/
