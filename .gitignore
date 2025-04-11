@@ -9,6 +9,9 @@ Famalicao/htmlFamalicao/
 Famalicao/outputFama_html/
 VilaReal/htmlVilaReal/
 
+# Ignorar CSVs gerados
+Famalicao/entidade_Famalicao.csv
+
 # Ignorar ficheiros temporários
 *.log
 *.tmp
