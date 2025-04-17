@@ -63,9 +63,8 @@ def construir_html(no_id):
         return ""
     
     dados = registos[no_id]
-    tipo = "📁" if dados["nivel"] in ["F", "SC", "SSC", "SR"] else "📄"
     link = f"{HTML_DIR}/{dados['ficheiro_html']}"
-    linha = f"<li>{tipo} <a href='{link}'>{dados['titulo']} [{dados['nivel']}]</a>"
+    linha = f"<li><a href='{link}'>{dados['titulo']} [{dados['nivel']}]</a>"
 
     subitens = "".join([construir_html(filho) for filho in sorted(filhos.get(no_id, []))])
     if subitens:
