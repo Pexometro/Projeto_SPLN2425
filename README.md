@@ -105,6 +105,6 @@ python download_records.py <Cidade>
 python generate_html.py <Cidade>
 python generate_index_estruturado.py <Cidade>
 python extract_entities.py <Cidade>
-python generate_indice_entidades.py
+python generate_indice_entidades.py <Cidade>
 python pesquisa.py <Cidade>
 ```
