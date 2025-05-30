@@ -1,16 +1,12 @@
-# Ignorar XMLs descarregados
-Famalicao/registosFamalicao_xml/
-VilaReal/registosVilaReal_xml/
+# Ignorar dados das pastas Famalicao e VilaReal em qualquer fase
+**/Famalicao/registosFamalicao_xml/
+**/Famalicao/htmlFamalicao/
+**/Famalicao/outputFama_html/
+**/Famalicao/entidade_Famalicao.csv
 
-VilaReal/entidades_VilaReal.csv
-
-# Ignorar HTMLs gerados
-Famalicao/htmlFamalicao/
-Famalicao/outputFama_html/
-VilaReal/htmlVilaReal/
-
-# Ignorar CSVs gerados
-Famalicao/entidade_Famalicao.csv
+**/VilaReal/registosVilaReal_xml/
+**/VilaReal/htmlVilaReal/
+**/VilaReal/entidades_VilaReal.csv
 
 # Ignorar ficheiros temporários
 *.log

@@ -1,8 +1,17 @@
 import csv
 import html
 from collections import defaultdict
+import sys
 
-
+if sys.argv[1] == "Famalicao":
+        cidade = "Famalicao"
+        print("Famalicao")
+elif sys.argv[1] == "VilaReal":
+        cidade = "VilaReal"    
+        print("VilaReal")
+else:
+        print("Cidade não reconhecida. A execução do script será encerrada.")
+        sys.exit(1) 
 
 def csv_to_html_table(csv_file_path):
     """
@@ -26,7 +35,7 @@ def csv_to_html_table(csv_file_path):
               # Check if it's the 'documento' column
                 if i == 0:
                   html_table += f"    <th>{html.escape(cell)}</th>\n"
-                elif csv_file_path.split('/')[-1] == "Famalicao/entidades_Famalicao.csv" and col_index == 2:
+                elif csv_file_path.split('/')[-1] == f"{cidade}/entidades_{cidade}.csv" and col_index == 2:
                   # Make the content of the cell a clickable link
                   html_table += f"    <td><a href='{html.escape(cell)}' target='_blank'>{html.escape(cell)}</a></td>\n"
                 else:
@@ -48,8 +57,8 @@ def create_html_file(html_content, output_file_path):
         html_file.write(html_content)
 
 # Main script execution
-csv_file_path = 'Famalicao/entidades_Famalicao.csv'  # Replace with the actual path to your CSV
-output_file_path = 'entidades_Famalicao.html' #name of the html
+csv_file_path = f"{cidade}/entidades_{cidade}.csv" 
+output_file_path = f'entidades_{cidade}.html' 
 
 html_table_content = csv_to_html_table(csv_file_path)
 create_html_file(f"<html><head><meta charset='utf-8'></head><body>{html_table_content}</body></html>", output_file_path)

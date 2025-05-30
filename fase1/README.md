@@ -2,6 +2,12 @@
 ## Mestrado em Informática — Unidade Curricular de Sistemas de Processamento de Linguagem Natural
 Este projeto tem como objetivo a exploração, transformação e apresentação de metadados arquivísticos disponibilizados via protocolo OAI-PMH, com foco na análise textual, organização hierárquica e estruturação semântica dos dados.
 
+## Autores
+
+- **Pedro Azevedo (pg57897)**
+- **Rui Pinto (pg56010)**
+- **Jorge Teixeira (pg55965)**
+
 ## Estrutura do Projeto
 ### 1-  Download de Registos (OAI-PMH)
 **Script:** download_records.py
@@ -16,7 +22,6 @@ Foi analisada a estrutura EAD (Encoded Archival Description), com identificaçã
 - Dependências funcionais e campos constantes
 
 - Chaves (ex: unitid, title)
-
 
 ### 3 - Árvore Arquivística
 **Script:** generate_index_estruturado.py
