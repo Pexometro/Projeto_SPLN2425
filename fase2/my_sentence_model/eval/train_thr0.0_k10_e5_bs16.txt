@@ -1,0 +1,6 @@
+Pares positivos gerados: 1000
+Total de pares (pos + neg): 2000
+ColTrain.json gravado com sucesso
+{'loss': 0.0419, 'grad_norm': 1.2432676553726196, 'learning_rate': 2.380952380952381e-06, 'epoch': 4.42}
+{'train_runtime': 733.8929, 'train_samples_per_second': 12.263, 'train_steps_per_second': 0.77, 'train_loss': 0.03828709188815767, 'epoch': 5.0}
+Treino concluído e modelo salvo em ./my_sentence_model/

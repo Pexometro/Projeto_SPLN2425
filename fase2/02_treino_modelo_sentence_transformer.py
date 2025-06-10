@@ -24,7 +24,6 @@ def load_docs(path):
     """Carrega documentos do JSON e atribui IDs se não existirem."""
     with open(path, 'r', encoding='utf-8') as f:
         docs = json.load(f)
-    # Se faltar campo 'id', adiciona um incremental
     if docs and 'id' not in docs[0]:
         for idx, doc in enumerate(docs):
             doc['id'] = idx
@@ -40,7 +39,7 @@ def save_pairs(pairs, path):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Gera ColTrain.json e treina um modelo SentenceTransformer"
+        description="Gera ColTrain.json, treina e salva métricas de validação em CSV separado"
     )
     parser.add_argument('--docs', type=str, default='ColDoc.json',
                         help='Ficheiro JSON com documentos')
@@ -55,12 +54,14 @@ def main():
     parser.add_argument('--model_name', type=str,
                         default='paraphrase-multilingual-MiniLM-L12-v2',
                         help='Modelo pré-treinado de base')
+    parser.add_argument('--output_path', type=str, default='my_sentence_model',
+                        help='Diretório para salvar modelo e métricas')
     args = parser.parse_args()
 
-    # 1) Carrega documentos
+    # Carrega documentos
     docs = load_docs(args.docs)
 
-    # 2) Gera pares positivos (top_k por doc) e filtra pelo threshold
+    # Gera pares positivos
     positives = []
     for doc in docs:
         sims = sorted(
@@ -72,53 +73,49 @@ def main():
                 positives.append((doc, other, sim))
     print(f"Pares positivos gerados: {len(positives)}")
 
-    # 3) Gera pares negativos (fáceis e "hard") na mesma quantidade de positivos
+    # Gera pares negativos
     num_pos = len(positives)
-    easy_negs = [(a, b, 0.0)
-                 for a, b in itertools.combinations(docs, 2)
-                 if guess_sim(a, b) == 0.0]
-    hard_negs = []
-    for a, b in itertools.combinations(docs, 2):
-        sim = guess_sim(a, b)
-        if 0.0 < sim < args.threshold:
-            hard_negs.append((a, b, sim))
+    easy_negs = [(a, b, 0.0) for a, b in itertools.combinations(docs, 2) if guess_sim(a,b) == 0.0]
+    hard_negs = [(a, b, s) for a, b in itertools.combinations(docs, 2)
+                  for s in [guess_sim(a,b)] if 0.0 < s < args.threshold]
     neg_samples = []
     neg_samples += random.sample(easy_negs, min(len(easy_negs), num_pos))
     neg_samples += random.sample(hard_negs, min(len(hard_negs), num_pos))
 
-    # Junta positivos e negativos, e embaralha
+    # Junta e embaralha
     all_pairs = positives + neg_samples
     random.shuffle(all_pairs)
     print(f"Total de pares (pos + neg): {len(all_pairs)}")
 
-    # 4) Salva ColTrain.json
+    # Salva pares
     save_pairs(all_pairs, 'ColTrain.json')
     print("ColTrain.json gravado com sucesso")
 
-    # 5) Converte para InputExample e faz split treino/validação
-    examples = [InputExample(texts=[a['abstract'], b['abstract']], label=float(sim))
-                for a, b, sim in all_pairs]
+    # Converte para InputExample e split treino/val
+    examples = [InputExample(texts=[a['abstract'], b['abstract']], label=float(s))
+                for a, b, s in all_pairs]
     split_idx = int(0.9 * len(examples))
-    train_examples = examples[:split_idx]
-    val_examples   = examples[split_idx:]
+    train_ex = examples[:split_idx]
+    val_ex   = examples[split_idx:]
 
-    train_loader = DataLoader(train_examples, shuffle=True, batch_size=args.batch_size)
-    evaluator    = EmbeddingSimilarityEvaluator.from_input_examples(val_examples, name='val-eval')
+    train_loader = DataLoader(train_ex, shuffle=True, batch_size=args.batch_size)
+    eval_name = f"val_thr{args.threshold}_k{args.top_k}_e{args.epochs}_bs{args.batch_size}"
+    evaluator = EmbeddingSimilarityEvaluator.from_input_examples(
+        val_ex, name=eval_name)
 
-    # 6) Carrega modelo, define warmup e treina
+    # Treina o modelo
     model = SentenceTransformer(args.model_name)
     warmup_steps = int(len(train_loader) * args.epochs * 0.1)
-
     model.fit(
         train_objectives=[(train_loader, losses.CosineSimilarityLoss(model))],
         evaluator=evaluator,
         epochs=args.epochs,
         warmup_steps=warmup_steps,
-        output_path='my_sentence_model',
+        output_path=args.output_path,
         show_progress_bar=True
     )
 
-    print("Treino concluído e modelo salvo em ./my_sentence_model/")
+    print(f"Treino concluído e modelo salvo em ./{args.output_path}/")
 
 if __name__ == '__main__':
     main()
