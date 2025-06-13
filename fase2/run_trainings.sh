@@ -1,4 +1,10 @@
 # Run training commands sequentially
+
+python3 02_treino_modelo_sentence_transformer.py \                            
+  --threshold 0.0 --top_k 5  --epochs 3  --batch_size 16 \
+  --output_path my_sentence_model \
+> my_sentence_model_thr0.0_k5_e3_bs16/eval/train.txt
+
 python3 02_treino_modelo_sentence_transformer.py \
   --threshold 0.0 --top_k 10 --epochs 5 --batch_size 16 \
   --output_path my_sentence_model \
