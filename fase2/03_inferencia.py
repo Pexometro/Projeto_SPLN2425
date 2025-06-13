@@ -25,11 +25,10 @@ def main():
     # Carrega modelo e documentos
     model = SentenceTransformer(args.model)
     docs = load_docs(args.docs)
-    abstracts = [d.get("abstract", "") for d in docs]
-    titles    = [d.get("title", "") for d in docs]
+    combined_texts = [f"{d.get('title', '')} {d.get('abstract', '')}" for d in docs]
 
     # Embaralha/encode
-    corpus_embeddings = model.encode(abstracts, convert_to_tensor=True)
+    corpus_embeddings = model.encode(combined_texts, convert_to_tensor=True)
     q_emb = model.encode(args.query, convert_to_tensor=True)
 
     # Busca top_k
@@ -39,7 +38,7 @@ def main():
     print(f"\nTop {args.top_k} resultados para: “{args.query}”\n")
     for rank, hit in enumerate(hits, start=1):
         idx = hit['corpus_id']
-        print(f"{rank:02d}. [{hit['score']:.4f}] {titles[idx]}")
+        print(f"{rank:02d}. [{hit['score']:.4f}] {docs[idx]['title']}")
 
 if __name__ == '__main__':
     main()

@@ -10,15 +10,11 @@ from sentence_transformers import SentenceTransformer, InputExample, losses
 from torch.utils.data import DataLoader
 from sentence_transformers.evaluation import EmbeddingSimilarityEvaluator
 
-
 def guess_sim(d1, d2):
-    """Calcula similaridade Jaccard sobre keywords de dois documentos."""
-    k1 = set(d1.get("keywords", []))
-    k2 = set(d2.get("keywords", []))
-    if not (k1 or k2):
-        return 0.0
-    return len(k1 & k2) / len(k1 | k2)
-
+    """Calcula similaridade Jaccard sobre keywords, títulos e abstracts de dois documentos."""
+    k1 = set(d1.get("keywords", []) + [d1.get("title", "").lower()] + d1.get("abstract", "").lower().split())
+    k2 = set(d2.get("keywords", []) + [d2.get("title", "").lower()] + d2.get("abstract", "").lower().split())
+    return len(k1 & k2) / len(k1 | k2) if (k1 or k2) else 0.0
 
 def load_docs(path):
     """Carrega documentos do JSON e atribui IDs se não existirem."""
@@ -29,13 +25,11 @@ def load_docs(path):
             doc['id'] = idx
     return docs
 
-
 def save_pairs(pairs, path):
     """Salva lista de pares (id1, id2, score) em JSON."""
     to_save = [{"id1": a['id'], "id2": b['id'], "score": sim} for a, b, sim in pairs]
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(to_save, f, ensure_ascii=False, indent=2)
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -57,6 +51,9 @@ def main():
     parser.add_argument('--output_path', type=str, default='my_sentence_model',
                         help='Diretório para salvar modelo e métricas')
     args = parser.parse_args()
+
+    # Ajusta output_path para incluir parâmetros de treino
+    output_path = f"{args.output_path}_thr{args.threshold}_k{args.top_k}_e{args.epochs}_bs{args.batch_size}"
 
     # Carrega documentos
     docs = load_docs(args.docs)
@@ -111,11 +108,11 @@ def main():
         evaluator=evaluator,
         epochs=args.epochs,
         warmup_steps=warmup_steps,
-        output_path=args.output_path,
+        output_path=output_path,
         show_progress_bar=True
     )
 
-    print(f"Treino concluído e modelo salvo em ./{args.output_path}/")
+    print(f"Treino concluído e modelo salvo em ./{output_path}/")
 
 if __name__ == '__main__':
     main()
