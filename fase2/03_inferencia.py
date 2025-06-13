@@ -1,32 +1,45 @@
-from sentence_transformers import SentenceTransformer, util
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import argparse
 import json
-import torch
 
-# Carregar o modelo treinado
-model = SentenceTransformer("my_sentence_model")
+from sentence_transformers import SentenceTransformer, util
 
-# Carregar os documentos processados
-with open("ColDoc.json", encoding="utf-8") as f:
-    docs = json.load(f)
+def load_docs(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
-# Separar abstracts e títulos
-abstracts = [doc["abstract"] for doc in docs]
-titles = [doc["title"] for doc in docs]
+def main():
+    parser = argparse.ArgumentParser(description="Inferência com modelo SentenceTransformer")
+    parser.add_argument('--model', type=str, default='my_sentence_model',
+                        help='Pasta do modelo treinado')
+    parser.add_argument('--docs', type=str, default='ColDoc.json',
+                        help='Ficheiro JSON com documentos (título + abstract)')
+    parser.add_argument('--query', type=str, required=True,
+                        help='String de consulta')
+    parser.add_argument('--top_k', type=int, default=5,
+                        help='Número de resultados a devolver')
+    args = parser.parse_args()
 
-# Codificar todos os abstracts com o modelo treinado
-abstract_embeddings = model.encode(abstracts, convert_to_tensor=True)
+    # Carrega modelo e documentos
+    model = SentenceTransformer(args.model)
+    docs = load_docs(args.docs)
+    abstracts = [d.get("abstract", "") for d in docs]
+    titles    = [d.get("title", "") for d in docs]
 
-# Função de consulta
-def consultar(query, top_k=5):
-    query_embedding = model.encode(query, convert_to_tensor=True)
-    cos_scores = util.cos_sim(query_embedding, abstract_embeddings)[0]
-    top_results = torch.topk(cos_scores, k=top_k)
+    # Embaralha/encode
+    corpus_embeddings = model.encode(abstracts, convert_to_tensor=True)
+    q_emb = model.encode(args.query, convert_to_tensor=True)
 
-    print(f"\n🔎 Query: {query}\n")
-    print(f"📄 Top {top_k} documentos mais relevantes:\n")
-    for score, idx in zip(top_results.values, top_results.indices):
-        print(f"{score:.4f} - {titles[idx]}")
-        print(f"    ➤ Resumo: {abstracts[idx][:200]}...\n")
+    # Busca top_k
+    hits = util.semantic_search(q_emb, corpus_embeddings, top_k=args.top_k)[0]
+    hits = sorted(hits, key=lambda x: x['score'], reverse=True)
 
-# Exemplo de utilização:
-consultar("aprendizagem automática em processamento de linguagem natural")
+    print(f"\nTop {args.top_k} resultados para: “{args.query}”\n")
+    for rank, hit in enumerate(hits, start=1):
+        idx = hit['corpus_id']
+        print(f"{rank:02d}. [{hit['score']:.4f}] {titles[idx]}")
+
+if __name__ == '__main__':
+    main()
