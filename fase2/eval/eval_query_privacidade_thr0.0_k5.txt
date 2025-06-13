@@ -1,0 +1,8 @@
+
+Top 5 resultados para: “segurança e privacidade em cloud computing”
+
+01. [0.6218] Análise de segurança para soluções de software para a cloud
+02. [0.5703] Reforço da privacidade através do controlo da pegada digital
+03. [0.4436] Middleware de acesso coerente a serviços de bases de dados na nuvem
+04. [0.4185] Navegação segura - análise do uso de HTTPS na perspectiva do utilizador final
+05. [0.3352] Integração de uma aplicação de reporting para testes de software no confluence cloud

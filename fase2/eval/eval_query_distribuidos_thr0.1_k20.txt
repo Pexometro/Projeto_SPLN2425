@@ -1,0 +1,8 @@
+
+Top 5 resultados para: “desenvolvimento de sistemas distribuídos tolerantes a falhas”
+
+01. [0.3655] Simulação de sistemas distribuídos de gestão de bases de dados
+02. [0.3371] Verification of distributed algorithms with the Why3 tool
+03. [0.3350] Fault tolerant decentralized deep neural networks
+04. [0.3007] Encaminhamento probabilístico de dados nomeados em redes tolerantes a atraso
+05. [0.3007] Distributed game

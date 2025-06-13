@@ -1,0 +1,8 @@
+
+Top 5 resultados para: “mineração de dados em contextos clínicos”
+
+01. [0.3565] O impacto da aplicação de modelos de maturidade nas áreas clínicas do Sistema Nacional de Saúde
+02. [0.2625] Geração de índices de saúde em tempo real
+03. [0.2589] HyLake: atualização de lagos de dados com granularidade fina
+04. [0.2448] Avaliação da qualidade de informação no registo da cirurgia segura
+05. [0.2187] Development of text mining tools for information retrieval and extraction from patents

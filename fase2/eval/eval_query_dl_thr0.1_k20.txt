@@ -1,0 +1,8 @@
+
+Top 5 resultados para: “deep learning para imagens médicas”
+
+01. [0.3580] Otimizações de armazenamento distribuído para aprendizagem profunda
+02. [0.2931] Geração de índices de saúde em tempo real
+03. [0.2886] Real-time healthcare intelligence in organ transplantation
+04. [0.2706] Tecnicas de Deep Learning para a determinação da idade óssea
+05. [0.2593] Plataforma de agendamento em ambiente hospitalar

@@ -1,0 +1,8 @@
+
+Top 5 resultados para: “desenvolvimento de sistemas distribuídos tolerantes a falhas”
+
+01. [0.3596] Fault tolerant decentralized deep neural networks
+02. [0.3519] Simulação de sistemas distribuídos de gestão de bases de dados
+03. [0.2971] Fault injection for the evaluation of critical systems
+04. [0.2800] Encaminhamento probabilístico de dados nomeados em redes tolerantes a atraso
+05. [0.2781] Análise de segurança para soluções de software para a cloud
