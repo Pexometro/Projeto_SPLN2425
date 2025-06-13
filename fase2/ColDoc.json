@@ -1,0 +1,1198 @@
+[
+  {
+    "title": "On the performance of WebAssembly",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Energy efficiency",
+      "Green software",
+      "Web browsers",
+      "WebAssembly",
+      "Eficiência energética",
+      "Navegadores web",
+      "Software Verde"
+    ]
+  },
+  {
+    "title": "Quantum reinforcement learning: a heuristic approach to solve deterministic MDPs",
+    "abstract": "Dissertação de mestrado integrado em Physics Engineering",
+    "keywords": [
+      "Amplitude amplification",
+      "Heuristic",
+      "Model-free",
+      "Maximum finding",
+      "Query complexity",
+      "Amplificação de amplitude",
+      "Complexidade de query",
+      "Heurística",
+      "Modelo livre",
+      "Procura pelo máximo"
+    ]
+  },
+  {
+    "title": "O impacto da aplicação de modelos de maturidade nas áreas clínicas do Sistema Nacional de Saúde",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica (especialização em Informática Médica)",
+    "keywords": []
+  },
+  {
+    "title": "Exploring adversarial attacks and defenses",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Adversarial attacks",
+      "FGSM",
+      "DeepFool",
+      "JSMA",
+      "PGD",
+      "Carlini",
+      "Adversarial training",
+      "Defensive distillation",
+      "SSIM",
+      "CIFAR-10",
+      "GTSRB",
+      "Ataques adversariais",
+      "Treino adversarial",
+      "Defesa via destilação"
+    ]
+  },
+  {
+    "title": "ROS-based data acquisition system",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Middleware",
+      "Robot operating system",
+      "Data acquisition system",
+      "Sistema de Aquisição de Dados"
+    ]
+  },
+  {
+    "title": "Extracção de conhecimento a partir do software Open-Source de Business Intelligence Pentaho em Unidade de Cuidados Intensivos",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica",
+    "keywords": []
+  },
+  {
+    "title": "High performance fourier transforms on GPUs with GLSL",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "FFT",
+      "GPGPU",
+      "GLSL",
+      "cuFFT",
+      "Performance",
+      "Compute",
+      "Cooley-Tukey",
+      "Stockham"
+    ]
+  },
+  {
+    "title": "Multilanguage chatbot with artificial intelligence for client support",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Processamento de Linguagem Natural (PNL)",
+      "Linguagem natural (LN)",
+      "Aprendizagem Automática (AA)",
+      "Aprendizagem Profunda (AP)",
+      "Inteligência Artificial (IA)",
+      "Processamento em Lote (PL)",
+      "Natural Language Processing (NLP)",
+      "Natural Language (NL)",
+      "Machine Learning (ML)",
+      "Deep Learning (DL)",
+      "Artificial Intelligence (AI)",
+      "Batch Processing (BP)"
+    ]
+  },
+  {
+    "title": "Avaliação de desempenho de redes oportunistas",
+    "abstract": "Dissertação de mestrado em Engenharia de Redes e Serviços Telemáticos",
+    "keywords": [
+      "Redes oportunistas",
+      "Dispositivos móveis",
+      "Oportunidades de contacto",
+      "Big data",
+      "Opportunistic networks",
+      "Mobile devices",
+      "Contact opportunities"
+    ]
+  },
+  {
+    "title": "Evaluating the impact of traffic sampling in network analysis",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Sampling",
+      "Quality of service",
+      "Long-range dependence",
+      "Análise seletiva",
+      "Qualidade de serviço"
+    ]
+  },
+  {
+    "title": "Transformação de especificações ETL em YAWL para processos  Kettle",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Sistemas de data warehousing",
+      "Sistemas de povoamento de data warehouses  (ETL)",
+      "Modelação de sistemas ETL",
+      "Geração de esqueletos ETL",
+      "YAWL",
+      "Kettle",
+      "Informática",
+      "Talend",
+      "Data warehousing systems",
+      "Systems to populate data warehouses (ETL)",
+      "ETL modeling  systems",
+      "ETL skeleton generation"
+    ]
+  },
+  {
+    "title": "Automatic driving: 2D detection and tracking using artificial intelligence techniques",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Autonomous driving",
+      "Artificial intelligence",
+      "Machine learning",
+      "Computer vision",
+      "Edge computing",
+      "Condução autónoma",
+      "Inteligência artificial",
+      "Aprendizagem de máquina",
+      "Visão por computador",
+      "Computação de borda"
+    ]
+  },
+  {
+    "title": "High performance data processing",
+    "abstract": "Dissertação de mestrado em Informatics Engeneering",
+    "keywords": [
+      "Base de dados",
+      "Distribuído",
+      "Concorrência",
+      "Consistência",
+      "Transação",
+      "Database",
+      "Distributed",
+      "Concurrency",
+      "Consistency",
+      "Transaction"
+    ]
+  },
+  {
+    "title": "Development of text mining tools for information retrieval and extraction from patents",
+    "abstract": "Dissertação de mestrado em Bioinformática",
+    "keywords": [
+      "Biomedical text mining",
+      "Patents",
+      "Information retrieval task",
+      "Optical character recognition",
+      "@note2",
+      "Mineração de textos biomédicos",
+      "Patentes",
+      "Obtenção de informação",
+      "Reconhecimento ótico de caracteres"
+    ]
+  },
+  {
+    "title": "Application of Formal Methods in the ITASAT Project",
+    "abstract": "Dissertação de mestrado em Engenharia de Informática",
+    "keywords": []
+  },
+  {
+    "title": "Reforço da privacidade através do controlo da pegada digital",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "“Sticky policies”",
+      "Sistema criptográfico",
+      "PKE",
+      "IBE",
+      "ABE",
+      "PRE",
+      "Controlo de acessos",
+      "DAC",
+      "MAC",
+      "ABAC",
+      "RBAC",
+      "Linguagem de políticas",
+      "XACML",
+      "XrML",
+      "EPAL",
+      "Cryptographic system",
+      "Access control",
+      "Policy language"
+    ]
+  },
+  {
+    "title": "Análise de segurança para soluções de software para a cloud",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Conflict resolution in clinical treatments",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Artificial intelligence in medicine",
+      "Clinical decision support system",
+      "Clinical pratice guidelines",
+      "Combining clinical pratice guidelines",
+      "Computer-interpreter guidelines",
+      "Multi criteria decision analysis",
+      "Analise de decisão com múltiplos critérios",
+      "Combinação de protocolos clínicos",
+      "Computer-interpreter guidelines",
+      "Inteligência artificial em medicina",
+      "Protocolos clínicos",
+      "Sistemas de apoio à decisão clínica"
+    ]
+  },
+  {
+    "title": "Python-tutor on program comprehension",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Program comprehension",
+      "Software visualization",
+      "Python-tutor",
+      "Graphs",
+      "Software animation",
+      "Compreensão de programas",
+      "Visualização de programas",
+      "Grafos",
+      "Animação de programas"
+    ]
+  },
+  {
+    "title": "Gerador de protótipos de interfaces gráficas para o IVY Workbench",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": [
+      "Interfaces com o utilizador",
+      "Prototipagem",
+      "Modelação e análise formais",
+      "User interfaces",
+      "Prototyping",
+      "Formal analysis and modeling"
+    ]
+  },
+  {
+    "title": "Plataforma de agendamento em ambiente hospitalar",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Agendamento",
+      "Desenvolvimento Full Stack",
+      "Interoperabilidade"
+    ]
+  },
+  {
+    "title": "GSD: a web application for teacher timetable management - dissertation report",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "Data analysis and recommender system architecture for e-commerce platforms",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Recommender system",
+      "Data analysis",
+      "Software architecture",
+      "e-commerce",
+      "Business intelligence",
+      "Sistema de recomendação",
+      "Análise de dados",
+      "Arquitetura de software",
+      "Comércio eletrônico"
+    ]
+  },
+  {
+    "title": "Decoding human movement intentions and postural reactions through brain signals",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Brain-computer interface",
+      "Electroencephalogram",
+      "Falls recognition",
+      "Pertubation-evoked potential",
+      "Deep learning",
+      "Interface cérebro-computador",
+      "Eletroencefalograma",
+      "Reconhecimento de queda",
+      "Potencial evocado de perturbação",
+      "Aprendizagem profunda"
+    ]
+  },
+  {
+    "title": "Uma solução para navegação indoor",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica",
+    "keywords": []
+  },
+  {
+    "title": "Aplicação móvel android de apoio a gestão de empréstimos e reservas das bibliotecas da Universidade do Minho",
+    "abstract": "Dissertação de mestrado integrado em Engenharia de Telecomunicações e Informática",
+    "keywords": [
+      "Dispositivos móveis",
+      "Smartphones",
+      "Tablets",
+      "Aplicações móveis",
+      "HTML5",
+      "Plataformas móveis",
+      "Desenvolvimento multiplataforma",
+      "Mobile devices",
+      "Mobile applications",
+      "Mobile operating system",
+      "Cross-platform development"
+    ]
+  },
+  {
+    "title": "Development of MOSGUITO: a user-friendly graphical interface for meta-omics data analyses",
+    "abstract": "Dissertação de mestrado em Bioinformatics",
+    "keywords": [
+      "Meta-omics",
+      "MOSCA",
+      "Flask",
+      "MOSGUITO",
+      "API",
+      "Metaómica"
+    ]
+  },
+  {
+    "title": "CLAV: gestão de backups e importação de dados",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Backup",
+      "Importação",
+      "CLAV",
+      "Import"
+    ]
+  },
+  {
+    "title": "Natural language processing applied to human resources",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Natural language processing (nlp)",
+      "Emotion recognition",
+      "Learning",
+      "Neural network",
+      "Human resources",
+      "Employee retention",
+      "Processamento de linguagem natural (pln)",
+      "Extração de emoções",
+      "Aprendizagem profunda",
+      "Redes neuronais",
+      "Recursos humanos",
+      "Retenção de colaboradores"
+    ]
+  },
+  {
+    "title": "Network inference: extension of linear programming model for time-series data",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Otimizações de armazenamento distribuído para aprendizagem profunda",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "I/O Optimization",
+      "Multi-node deep learning",
+      "Otimização de E/S",
+      "Aprendizagem profunda multi-nodo"
+    ]
+  },
+  {
+    "title": "Influence of near-infrared images in the object detection task",
+    "abstract": "Dissertação de mestrado em Computer Science Engineering",
+    "keywords": [
+      "Deep learning",
+      "Infrared",
+      "Computer vision",
+      "CNN"
+    ]
+  },
+  {
+    "title": "Processamento de imagens histológicas de cérebros marcados com IHC para estudos neurofisiológicos",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Processamento de imagens",
+      "Atlas",
+      "Imagens histológicas de cérebros de rato",
+      "Registo de imagens",
+      "Image processing",
+      "Brain rat histological images",
+      "Image registration"
+    ]
+  },
+  {
+    "title": "Middleware para integração com sistemas de queues",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Comunicação assíncrona",
+      "Middleware",
+      "Sistemas de queues",
+      "Asynchronous communication",
+      "Queue systems"
+    ]
+  },
+  {
+    "title": "Consola de atendimento para gestão de chamadas telefónicas",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Consola de operador",
+      "Gestão de chamadas",
+      "Desenvolvimento front-end",
+      "Desenvolvimento web",
+      "Interface do utilizador",
+      "Arquitetura do cliente",
+      "Attendant console",
+      "Call handling",
+      "Ffront-end development",
+      "Web development",
+      "User interface",
+      "Client architecture"
+    ]
+  },
+  {
+    "title": "Sistemas de conversação para software educacional",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Diálogos",
+      "Sistema de conversação",
+      "Sistemas educacionais",
+      "Sistema de ensino inteligente",
+      "Educational system",
+      "Intelligent tutoring system",
+      "Conversational system",
+      "Natural language processing",
+      "Dialogue"
+    ]
+  },
+  {
+    "title": "Implementing an integrated syntax directed editor for LISS",
+    "abstract": "Dissertação de mestrado em Engenharia Informática (área de especialização em Processamento de Linguagens)",
+    "keywords": []
+  },
+  {
+    "title": "Hypatiamat - I want to solve questions about...",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "API",
+      "REST",
+      "Node.js",
+      "Strapi",
+      "Vue.js",
+      "Vuetify",
+      "JavaScript",
+      "Back-End",
+      "Front-end",
+      "Full-stack",
+      "MySQL",
+      "NoSQL",
+      "Web Application",
+      "Swagger",
+      "Documentation",
+      "Aplicação web",
+      "Documentação"
+    ]
+  },
+  {
+    "title": "Mining hints for fixing formal specifications",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Alloy",
+      "Geração de dicas automáticas",
+      "Métodos formais",
+      "Mineração de dados",
+      "Automated hint generation",
+      "Data mining",
+      "Formal methods"
+    ]
+  },
+  {
+    "title": "AIoTA: an IoT Platform on MonetDB",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "Regressão não linear em curvas de crescimento para parâmetros placentares em R",
+    "abstract": "Dissertação de mestrado em Bioinformática",
+    "keywords": [
+      "Placenta",
+      "Curvas de crescimento",
+      "Regressão não linear",
+      "GAMLSS",
+      "LMST",
+      "Growth curves",
+      "Nonlinear regression"
+    ]
+  },
+  {
+    "title": "Tecnicas de Deep Learning para a determinação da idade óssea",
+    "abstract": "Dissertação de mestrado de integrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Mobile ID como um serviço: generalização da arquitetura do standard ISO/IEC DIS 18013-5",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Identificação eletrónica",
+      "eIDAS",
+      "ISO-IEC DIS 18013-5",
+      "Sistema de identificação eletrónica configurável",
+      "Aplicação",
+      "Electronic identification",
+      "Configurable electronic identification system",
+      "Application"
+    ]
+  },
+  {
+    "title": "Exploring paraconsistent logics for quantum programs",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Física",
+    "keywords": [
+      "Paraconsistency",
+      "Transition systems",
+      "Modal logic",
+      "Quantum computation",
+      "Paraconsistência",
+      "Sistemas de transição",
+      "Lógica modal",
+      "Computação quântica"
+    ]
+  },
+  {
+    "title": "Real-time healthcare intelligence in organ transplantation",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica (área de especialização em Informática Médica)",
+    "keywords": [
+      "Decision-making process",
+      "Organ transplantation",
+      "Potential organ donors detection",
+      "Deteção de potenciais dadores de órgãos",
+      "Processo de tomada de decisão",
+      "Transplantação de órgãos"
+    ]
+  },
+  {
+    "title": "Parallel interactive ray tracing and exploiting spatial coherence",
+    "abstract": "Dissertação de mestrado em Engenharia de Informática",
+    "keywords": [
+      "Ray tracing",
+      "Parallel computing",
+      "Spatial coherence",
+      "Computação paralela",
+      "Coerência espacial"
+    ]
+  },
+  {
+    "title": "Efficient execution of Java programs on GPU",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "GPU",
+      "GPGU",
+      "Java",
+      "High-performance",
+      "OpenCL",
+      "Aparapi",
+      "SHOC",
+      "Parboil"
+    ]
+  },
+  {
+    "title": "Historical data management in big databases",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Databases",
+      "Data quality",
+      "Data management",
+      "Data mining",
+      "Machine learning",
+      "Bases de dados",
+      "Qualidade de dados",
+      "Gestão de dados",
+      "Mineração de dados",
+      "Aprendizagem máquina"
+    ]
+  },
+  {
+    "title": "Crowd sensing and forecasting for Smart Cities",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Ambient Intelligence",
+      "Crowd Sensing",
+      "Machine Learning",
+      "Smart Cities",
+      "Séries Temporais",
+      "Time Series Problems"
+    ]
+  },
+  {
+    "title": "Plataforma de apoio à decisão nos cuidados de ginecologia e obstetrícia",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica (área de especialização em Informática Médica)",
+    "keywords": []
+  },
+  {
+    "title": "Adaptive game content generation",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "Smart city geofences for vulnerable road users",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": [
+      "Geofences",
+      "Road Safety",
+      "Smart Alerts and Notifications",
+      "Smart Cities",
+      "Vulnerable Road Users",
+      "Avisos Inteligentes",
+      "Segurança Rodoviária"
+    ]
+  },
+  {
+    "title": "Diagnóstico da doença de Alzheimer com redes neuronais profundas",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Doença de Alzheimer",
+      "Diagnóstico assistido por computador",
+      "Défice cognitivo ligeiro",
+      "Ressonância magnética estrutural",
+      "Aprendizagem profunda",
+      "Redes neuronais convolucionais",
+      "Alzheimer’s disease",
+      "Computer aided diagnosis",
+      "Mild cognitive impairment",
+      "Structural MRI",
+      "Deep learning",
+      "Convolutional neural networks"
+    ]
+  },
+  {
+    "title": "Development of a self-diagnosis tests system for integration in a cyber-physical system",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Sistemas ciber-físicos",
+      "Auto-diagnóstico",
+      "Automação de testes",
+      "Aplicação web",
+      "Cyber-physical systems",
+      "Self-diagnosis",
+      "Test automation",
+      "Web Application"
+    ]
+  },
+  {
+    "title": "MulletBench: Multi-layer Edge Time Series Database Benchmark",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Benchmark",
+      "Internet of things",
+      "Fog",
+      "Time series",
+      "Databases",
+      "Internet das coisas"
+    ]
+  },
+  {
+    "title": "Modelação de padrões de conectividade cerebral funcional",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica",
+    "keywords": []
+  },
+  {
+    "title": "Monitorização e controlo em ambientes industriais através de rede de sensores sem fios",
+    "abstract": "Dissertação de mestrado integrado em Engenharia de Telecomunicações e Informática",
+    "keywords": []
+  },
+  {
+    "title": "Verification of distributed algorithms with the Why3 tool",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Deductive verification",
+      "Distributed systems and protocols",
+      "Why3",
+      "Why3do",
+      "Verificação dedutiva",
+      "Sistemas e protocolos distribuídos"
+    ]
+  },
+  {
+    "title": "Fault injection for the evaluation of critical systems",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Eficiência energética em redes de sensores sem fios: medição adaptativa num sistema de rega inteligente usando o CupCarbon",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Wireless Sensor Networks",
+      "Adaptive sensing",
+      "Energy-aware sensing",
+      "Intelligent Irrigation System",
+      "CupCarbon",
+      "Energy Consumption",
+      "Redes de Sensores Sem Fios",
+      "Sensing adaptativo",
+      "Eficiência energética",
+      "Sistema de Rega Inteligente",
+      "Consumo energético"
+    ]
+  },
+  {
+    "title": "Análise de sentimentos para a geração de índices de bem-estar",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Well-being Indexes",
+      "Sentiment analysis",
+      "Text Mining",
+      "Online Analytical Processing (OLAF)",
+      "Índices de Bem-estar",
+      "Análise de sentimentos",
+      "Processamento de textos",
+      "Sistemas multidimensionais de dados (OLAP)"
+    ]
+  },
+  {
+    "title": "Efficient synchronization of state-based CRDTs",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "Simulação de sistemas distribuídos de gestão de bases de dados",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Base de dados",
+      "Sistemas distribuídos",
+      "Base de dados distribuída geo-replicada",
+      "Simulação",
+      "Simulação de eventos discreto",
+      "Database",
+      "Distributed systems",
+      "Distributed geo-replicated database",
+      "Simulation",
+      "Discrete event simulation"
+    ]
+  },
+  {
+    "title": "Navegação segura - análise do uso de HTTPS na perspectiva do utilizador final",
+    "abstract": "Dissertação de mestrado em Engenharia de Redes e Serviços Telemáticos, Diretório de Informática",
+    "keywords": [
+      "HTTPS",
+      "User",
+      "Web security",
+      "Utilizador",
+      "Segurança na Web"
+    ]
+  },
+  {
+    "title": "Learning and testing stochastic discrete event",
+    "abstract": "Dissertação de mestrado em Engenharia de Informática",
+    "keywords": []
+  },
+  {
+    "title": "Automatic quantification of microglial cells from brain images",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Automatic quantification of cells",
+      "Central nervous system",
+      "Deep learning",
+      "Image processing",
+      "Image segmentation",
+      "Microglial cells",
+      "Células microgliais",
+      "Processamento de imagem",
+      "Quantificação automática de células",
+      "Segmentação de imagem",
+      "Sistema nervoso central"
+    ]
+  },
+  {
+    "title": "A quantum algorithm for ray casting using an orthographic camera",
+    "abstract": "Dissertação de mestrado em Physics Engineering",
+    "keywords": [
+      "Quantum computing",
+      "Grover’s algorithm",
+      "Complexity",
+      "Ray casting",
+      "Computação quântica",
+      "Algoritmo de Grover",
+      "Complexidade"
+    ]
+  },
+  {
+    "title": "Bidirectional finite state machine based testing",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "Simulação de protocolos de encaminhamento em redes oportunistas",
+    "abstract": "Dissertação de mestrado integrado em Engenharia de Telecomunicações e Informática",
+    "keywords": []
+  },
+  {
+    "title": "Dynamic application to identify percentiles related to placenta parameters according to gestational age",
+    "abstract": "Dissertação de mestrado em Bioinformatics",
+    "keywords": [
+      "Placenta",
+      "Curvas de crescimento",
+      "Desenvolvimento",
+      "Shiny",
+      "Regressão de Quantis",
+      "Growth curves",
+      "Development",
+      "Shiny",
+      "Quantile regression"
+    ]
+  },
+  {
+    "title": "Geração de índices de saúde em tempo real",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Sistemas de ajuda inteligentes",
+      "Saúde no smartwatch",
+      "Índices de bem-estar",
+      "Indicadores de saúde",
+      "Análise de dados",
+      "Mineração de dados",
+      "Reporting",
+      "Dashboarding",
+      "Smart help systems",
+      "Smartwatch health",
+      "Wellness indexes",
+      "Health indicators",
+      "Data analysis",
+      "Data mining"
+    ]
+  },
+  {
+    "title": "Hypatiamat: Gestão de Campeonatos",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Hypatiamat",
+      "Championships",
+      "Certificates",
+      "Interface",
+      "Statistics",
+      "Campeonatos",
+      "Certificados",
+      "Interface",
+      "Estatísticas"
+    ]
+  },
+  {
+    "title": "Middleware de acesso coerente a serviços de bases de dados na nuvem",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Encaminhamento probabilístico de dados nomeados em redes tolerantes a atraso",
+    "abstract": "Dissertação de mestrado integrado em Engenharia de Telecomunicações e Informática",
+    "keywords": []
+  },
+  {
+    "title": "HyLake: atualização de lagos de dados com granularidade fina",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Lagos de dados",
+      "Transações",
+      "Processamento híbrido transacional-analítico",
+      "Bases de dados",
+      "Sistemas distribuídos",
+      "Data lakes",
+      "Transactions",
+      "HTAP (Hybrid Transactional Analytical Processing)",
+      "Databases",
+      "Distributed systems"
+    ]
+  },
+  {
+    "title": "Towards model checking electrum specifications with LTSmin",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Alloy",
+      "Electrum",
+      "Model checking",
+      "LTSmin",
+      "Partial order reduction",
+      "TLA+"
+    ]
+  },
+  {
+    "title": "Data analytics in IoT FaaS with DataFlasks",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": []
+  },
+  {
+    "title": "ADAPT-VQC Adaptive Variational Quantum Classifier",
+    "abstract": "Dissertação de mestrado em Physics Engineering",
+    "keywords": [
+      "QML",
+      "VQC",
+      "VQA",
+      "Depth",
+      "Ansatz",
+      "Profundidade"
+    ]
+  },
+  {
+    "title": "Properties that better describe a programming language",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Programming languages",
+      "Programming language characterization",
+      "Programming anguage design",
+      "Programming language identification",
+      "Linguagens de programação",
+      "Caracterização de linguagens de programação",
+      "Design de linguagens de programação",
+      "Identificação de linguagens de programação"
+    ]
+  },
+  {
+    "title": "A machine learning approach to boredom detection in smartphones",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Aborrecimento",
+      "Aprendizagem automática",
+      "Computação afectiva",
+      "Inteligência artificial",
+      "Sensores",
+      "Affective computing",
+      "Artificial intelligence",
+      "Boredom",
+      "Machine learning",
+      "Smartphone"
+    ]
+  },
+  {
+    "title": "Avaliação da qualidade de informação no registo da cirurgia segura",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica (área de especialização em Informática Médica)",
+    "keywords": []
+  },
+  {
+    "title": "Your travel: plataforma de agendamento de viagens personalizadas",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Personalização",
+      "Comunicação",
+      "Otimização",
+      "Eficiência",
+      "Personalization",
+      "Communication",
+      "Optimization",
+      "Efficiency"
+    ]
+  },
+  {
+    "title": "Modelling an intelligent interaction system for increasing the level of attentiveness and engagement",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": [
+      "Ambient intelligent system",
+      "Attention",
+      "Decision support system",
+      "Teacher",
+      "Students",
+      "Sistema inteligente ambiente",
+      "Atenção",
+      "Sistema de suporte de decisão",
+      "Professor",
+      "Alunos"
+    ]
+  },
+  {
+    "title": "Simulation of large scale pervasive displays networks",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": []
+  },
+  {
+    "title": "Active learning for fraud detection",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Active learning",
+      "Data science",
+      "Fraud detection",
+      "Machine learning"
+    ]
+  },
+  {
+    "title": "Aplicações para TV baseadas em templates",
+    "abstract": "Dissertação de mestrado em Computer Science",
+    "keywords": [
+      "Plataforma Internet Protocol television (IPTV)",
+      "Desenvolvimento de aplicações",
+      "Templates",
+      "IPTV platform",
+      "Applications"
+    ]
+  },
+  {
+    "title": "Simulation of the nucleation of the precipitate Al3Sc in an Aluminum Scandium alloy using the kinetic Monte Carlo method",
+    "abstract": "Dissertação de mestrado em Micro/Nano Tecnologias",
+    "keywords": []
+  },
+  {
+    "title": "Integração de uma aplicação de reporting para testes de software no confluence cloud",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Confluence",
+      "Desenvolvimento de software",
+      "Documentação",
+      "Forge",
+      "Macro",
+      "Relatório",
+      "Testes de software",
+      "Xray",
+      "Documentation",
+      "Report",
+      "Software development",
+      "Software testing"
+    ]
+  },
+  {
+    "title": "Fault tolerant decentralized deep neural networks",
+    "abstract": "Dissertação de mestrado integrado em Informatics Engineering",
+    "keywords": [
+      "Distributed systems",
+      "Machine Learning",
+      "Artificial intelligence",
+      "Fault Tolerance",
+      "Sistemas distribuídos",
+      "Inteligência artificial",
+      "Tolerância a faltas"
+    ]
+  },
+  {
+    "title": "Fabrication of PEDOT:PSS/silver nanowire based films for the development of transparent heating systems",
+    "abstract": "Dissertação de mestrado em Engineering Physics, Devices, Microsystems and Nanotechnologies",
+    "keywords": [
+      "Transparent flexible heating systems",
+      "PEDOT:PSS",
+      "Silver nanowires",
+      "Solvents",
+      "Post-treatments",
+      "Films deposition",
+      "Screen-printing",
+      "Resistance",
+      "Sistemas de aquecimento transparentes e flexíveis",
+      "Nanofios de prata",
+      "Solventes",
+      "Pós-tratamentos",
+      "Deposição de filmes",
+      "Serigrafia",
+      "Resistência"
+    ]
+  },
+  {
+    "title": "Evaluating constrained users ability to interact with virtual reality applications",
+    "abstract": "Dissertação de mestrado em Informatics Engineering",
+    "keywords": [
+      "Virtual reality",
+      "Intensive care",
+      "Cognitive resilience",
+      "Non-pharmacological therapies",
+      "Realidade virtual",
+      "Cuidados intensivos",
+      "Resiliência cognitiva",
+      "Terapias não-farmacológicas"
+    ]
+  },
+  {
+    "title": "Botnet detection: a numerical and heuristic analysis",
+    "abstract": "Dissertação de mestrado em Engenharia de Informática",
+    "keywords": []
+  },
+  {
+    "title": "HealthAdvisor ecosystem mobile solutions",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Saúde",
+      "Comunidade",
+      "Avaliação",
+      "Móvel",
+      "Health",
+      "Community",
+      "Rating",
+      "Mobile"
+    ]
+  },
+  {
+    "title": "Exploring rust for embedded and critical systems",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Critical systems",
+      "Embedded systems",
+      "Rust",
+      "Sistemas críticos",
+      "Sistemas embebidos"
+    ]
+  },
+  {
+    "title": "Apoio à decisão em ginecologia e obstetrícia",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Biomédica (área de especialização em Informática Médica)",
+    "keywords": []
+  },
+  {
+    "title": "Distributed game",
+    "abstract": "Dissertação de mestrado em Engenharia Informática",
+    "keywords": [
+      "Massively Multiplayer Online Games",
+      "Distributed System",
+      "Gaming Architecture",
+      "Online Game",
+      "Game Server",
+      "Interest Management",
+      "Synchronizationx",
+      "Synchronization",
+      "Scalability",
+      "Networking",
+      "Replication",
+      "Consistency Control",
+      "Jogo MMO",
+      "Sistema Distribuído",
+      "Arquitetura de Jogo",
+      "Jogo Online",
+      "Servidor de Jogo",
+      "Gestão de Interesse",
+      "Sincronização",
+      "Escalabilidade",
+      "Rede",
+      "Replicação",
+      "Controlo de Consistência"
+    ]
+  },
+  {
+    "title": "Monitorização de saúde física e psicológica utilizando dispositivos móveis",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "Aplicações de saúde",
+      "Big Five Mini-Markers",
+      "Dados biométricos",
+      "Machine learning",
+      "Teste psicológico",
+      "Biometric data",
+      "Heath apps",
+      "Psychological tests"
+    ]
+  },
+  {
+    "title": "Traceability and safety tradeoffs in modern vehicles",
+    "abstract": "Dissertação de mestrado integrado em Engenharia Informática",
+    "keywords": [
+      "V2X",
+      "Privacy",
+      "Simulation",
+      "Vehicles",
+      "Privacidade",
+      "Simulação",
+      "Veículos"
+    ]
+  },
+  {
+    "title": "Shadow mapping e ray-tracing",
+    "abstract": "Dissertação de mestrado em Engenharia de Informática",
+    "keywords": []
+  },
+  {
+    "title": "Combining data and text mining techniques for automatic analysis of financial reports",
+    "abstract": "Dissertação de mestrado em Computer Science and Engineering",
+    "keywords": [
+      "Data science",
+      "Financial performance prediction",
+      "Natural language processing",
+      "Readability evaluation",
+      "Stock markets",
+      "Avaliação da legibilidade",
+      "Ciência de Dados",
+      "Mercado de ações",
+      "Previsão do desempenho financeiro",
+      "Processamento de linguagem natural"
+    ]
+  }
+]
