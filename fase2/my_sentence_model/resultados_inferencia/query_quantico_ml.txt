@@ -1,8 +1,0 @@
-
-Top 5 resultados para: “computação quântica aplicada ao machine learning”
-
-01. [0.3794] Simulation of the nucleation of the precipitate Al3Sc in an Aluminum Scandium alloy using the kinetic Monte Carlo method
-02. [0.2869] Fabrication of PEDOT:PSS/silver nanowire based films for the development of transparent heating systems
-03. [0.2656] A quantum algorithm for ray casting using an orthographic camera
-04. [0.2656] ADAPT-VQC Adaptive Variational Quantum Classifier
-05. [0.2555] Development of MOSGUITO: a user-friendly graphical interface for meta-omics data analyses

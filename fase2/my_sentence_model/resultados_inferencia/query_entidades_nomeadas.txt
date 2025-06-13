@@ -1,8 +1,0 @@
-
-Top 5 resultados para: “reconhecimento de entidades nomeadas em linguagem natural”
-
-01. [0.3033] Implementing an integrated syntax directed editor for LISS
-02. [0.1151] Fabrication of PEDOT:PSS/silver nanowire based films for the development of transparent heating systems
-03. [0.0982] HyLake: atualização de lagos de dados com granularidade fina
-04. [0.0982] Simulação de sistemas distribuídos de gestão de bases de dados
-05. [0.0982] Distributed game
