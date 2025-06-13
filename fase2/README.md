@@ -69,7 +69,7 @@ Executar uma consulta única:
 ```bash
 python3 03_inferencia.py --model my_sentence_model_thr0.0_k5_e3_bs16 --docs ColDoc.json --query "segurança e privacidade em cloud computing" --top_k 5
 ```
-Exemplo de saída:
+Exemplo de Output:
 ```
 Top 5 resultados para: “segurança e privacidade em cloud computing”
 01. [0.6218] Análise de segurança para soluções de software para a cloud
@@ -78,12 +78,3 @@ Top 5 resultados para: “segurança e privacidade em cloud computing”
 04. [0.4185] Navegação segura - análise do uso de HTTPS na perspectiva do utilizador final
 05. [0.3352] Integração de uma aplicação de reporting para testes de software no confluence cloud
 ```
-
-## Notas
-- Foram observados avisos do TensorFlow (e.g., AVX2, computation placer); usar `tensorflow-cpu` resolve problemas de GPU:
-  ```bash
-  pip uninstall tensorflow
-  pip install tensorflow-cpu
-  ```
-- O ficheiro `ColDoc.json` tem cobertura limitada para inteligência artificial explicável, impactando o desempenho dessa consulta.
-- Métricas de validação em `my_sentence_model_*/eval/train.txt` indicam que `thr0.0_k5_e3_bs16` é eficiente (e.g., Pearson cosseno ~0.65).
