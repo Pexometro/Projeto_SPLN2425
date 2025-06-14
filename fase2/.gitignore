@@ -1,0 +1,26 @@
+# Ignorar diretórios de modelos treinados
+my_sentence_model*/
+my_sentence_model_*/
+
+# Ignorar ficheiros de log
+train_log.txt
+inference_log.txt
+
+# Ignorar checkpoints e ficheiros temporários
+checkpoints/
+*.txt
+
+# Ignorar ficheiros de cache do Python
+__pycache__/
+*.pyc
+
+# Ignorar ficheiros de ambiente ou configurações locais
+.env
+*.env
+
+# Ignorar ficheiros do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar ficheiros ou diretórios específicos (se aplicável)
+OAI.xml
