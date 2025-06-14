@@ -64,10 +64,10 @@ def main():
                         help='Diretório para salvar modelo e métricas')
     args = parser.parse_args()
 
-    # Ajusta output_path para incluir parâmetros de treino
+
     output_path = f"{args.output_path}_thr{args.threshold}_k{args.top_k}_e{args.epochs}_bs{args.batch_size}"
 
-    # Carrega documentos
+
     docs = load_docs(args.docs)
 
     # Gera pares positivos
@@ -91,7 +91,7 @@ def main():
     neg_samples += random.sample(easy_negs, min(len(easy_negs), num_pos))
     neg_samples += random.sample(hard_negs, min(len(hard_negs), num_pos))
 
-    # Junta e embaralha
+
     all_pairs = positives + neg_samples
     random.shuffle(all_pairs)
     print(f"Total de pares (pos + neg): {len(all_pairs)}")
