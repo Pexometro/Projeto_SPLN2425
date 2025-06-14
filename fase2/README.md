@@ -41,6 +41,16 @@ Este projeto tem como objetivo principal desenvolver um sistema de recuperação
 - Dados extraídos do RepositóriUM usando `create_xml.py` com pedidos OAI-PMH e guardados em `OAI.xml`.
 - Conversão para `ColDoc.json` realizada por `create_json.py`, extraindo `title`, `abstract` e `keywords` com `BeautifulSoup`.
 
+### Normalização das Keywords
+- Antes de gerar os pares de treino, todas as keywords dos documentos são **normalizadas** para garantir maior consistência e melhorar a qualidade dos pares positivos/negativos.
+- O processo de normalização inclui:
+  - Conversão para minúsculas.
+  - Remoção de acentos e caracteres especiais.
+  - Substituição de hífens/underscores por espaços.
+  - Remoção de espaços extra.
+- Esta normalização é aplicada no script `create_json.py` ao criar o ficheiro `ColDoc.json` e novamente garantida no carregamento dos documentos para treino.
+- O objetivo é evitar que variações ortográficas ou de formatação prejudiquem a identificação de documentos semelhantes, tornando o cálculo de similaridade mais robusto.
+
 ### Geração de Pares de Treino
 - Função `guess_sim` no script `02_treino_modelo_sentence_transformer.py` calcula a similaridade Jaccard baseada em palavras-chave, títulos e resumos.
 - Pares filtrados com limiares (`threshold`) de 0.0, 0.05, e 0.1, e `top_k` variando de 5 a 20, gerando `ColTrain.json`.

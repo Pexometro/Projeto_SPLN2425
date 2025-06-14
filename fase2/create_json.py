@@ -1,5 +1,15 @@
 import json
 from bs4 import BeautifulSoup
+import unicodedata
+import re
+
+def normalize_keyword(kw):
+    kw = kw.lower()
+    kw = unicodedata.normalize('NFKD', kw).encode('ASCII', 'ignore').decode('utf-8')
+    kw = re.sub(r'[-_]', ' ', kw)
+    kw = re.sub(r'[^\w\s]', '', kw)
+    kw = re.sub(r'\s+', ' ', kw).strip()
+    return kw
 
 with open("OAI.xml", encoding="utf-8") as f:
     xml = f.read()
@@ -20,7 +30,7 @@ for record in soup.find_all("record"):
     docs.append({
         "title": doc.get("title", [""])[0],
         "abstract": doc.get("description", [""])[0],
-        "keywords": doc.get("subject", [])
+        "keywords": [normalize_keyword(kw) for kw in doc.get("subject", [])]
     })
 
 with open("ColDoc.json", "w", encoding="utf-8") as f:

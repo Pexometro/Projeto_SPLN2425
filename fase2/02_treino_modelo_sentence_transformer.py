@@ -5,6 +5,8 @@ import argparse
 import json
 import itertools
 import random
+import unicodedata
+import re
 
 from sentence_transformers import SentenceTransformer, InputExample, losses
 from torch.utils.data import DataLoader
@@ -16,10 +18,20 @@ def guess_sim(d1, d2):
     k2 = set(d2.get("keywords", []) + [d2.get("title", "").lower()] + d2.get("abstract", "").lower().split())
     return len(k1 & k2) / len(k1 | k2) if (k1 or k2) else 0.0
 
+def normalize_keyword(kw):
+    kw = kw.lower()
+    kw = unicodedata.normalize('NFKD', kw).encode('ASCII', 'ignore').decode('utf-8')
+    kw = re.sub(r'[-_]', ' ', kw)
+    kw = re.sub(r'[^\w\s]', '', kw)
+    kw = re.sub(r'\s+', ' ', kw).strip()
+    return kw
+
 def load_docs(path):
-    """Carrega documentos do JSON e atribui IDs se não existirem."""
+    """Carrega documentos do JSON, normaliza keywords e atribui IDs se não existirem."""
     with open(path, 'r', encoding='utf-8') as f:
         docs = json.load(f)
+    for doc in docs:
+        doc['keywords'] = [normalize_keyword(kw) for kw in doc.get('keywords', [])]
     if docs and 'id' not in docs[0]:
         for idx, doc in enumerate(docs):
             doc['id'] = idx
